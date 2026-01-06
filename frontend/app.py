@@ -24,7 +24,7 @@ if prompt := st.chat_input("What is up?"):
         with st.spinner("Thinking..."):
             try:
                 response = requests.post(
-                    "http://127.0.0.1:8000/chat", 
+                    "https://speedy-chat-api.onrender.com", 
                     json={"messages": st.session_state.messages} # Sending the whole conversation
                 )
                 
